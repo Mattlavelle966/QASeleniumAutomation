@@ -11,7 +11,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.junit.Assert.assertEquals;
 
-import java.time.Duration;
 
 /**
  * Unit test for simple App.
@@ -25,8 +24,6 @@ public class AppTest
         // Set up Chrome driver
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\mattl\\Documents\\QAExcercise\\QATest\\src\\Resources\\chromedriver.exe"); // Optional if chromedriver is in PATH
         driver = new ChromeDriver();
-        //Wait for pageload
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
     }
 
     @Test
@@ -50,7 +47,6 @@ public class AppTest
         submitButton.click();
 
         //Wait for pageload
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
         // Verify confirmation message
         WebElement confirmation = driver.findElement(By.className("display-6"));
         String confirmationText = confirmation.getText();
@@ -62,8 +58,6 @@ public class AppTest
     public void tearDown() {
         // Close the browser
         System.out.println("test complete");
-        //wait
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
 
         driver.quit();
     }
