@@ -11,10 +11,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.junit.Assert.assertEquals;
 
-
-/**
- * Unit test for simple App.
- */
 public class AppTest 
 {
     private WebDriver driver;
@@ -22,7 +18,6 @@ public class AppTest
     @Before
     public void setUp() {
         // Set up Chrome driver
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\mattl\\Documents\\QAExcercise\\QATest\\src\\Resources\\chromedriver.exe"); // Optional if chromedriver is in PATH
         driver = new ChromeDriver();
     }
 
