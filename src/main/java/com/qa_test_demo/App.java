@@ -1,20 +1,21 @@
 package com.qa_test_demo;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.io.IOException;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
-    private static final Logger logger = LoggerFactory.getLogger(App.class);
     public static void main( String[] args )
     {
 
-        System.out.println( "Hello World!" );
-        logger.info("Starting form submission test");
+        System.out.println( "Java here" );
+        try {
+            ConvertCsvXlsx.convert("logs/tests.csv", "logs/testconversion.xlsx");
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
 
     }
 }

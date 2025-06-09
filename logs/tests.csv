@@ -1,0 +1,9 @@
+2025-06-09 13:18:39,INFO,com.qa_test_demo.AppTest,Setting up ChromeDriver...
+2025-06-09 13:18:40,INFO,com.qa_test_demo.AppTest,Starting form submission test
+2025-06-09 13:18:40,INFO,com.qa_test_demo.AppTest,Opened form page
+2025-06-09 13:18:40,INFO,com.qa_test_demo.AppTest,Entered name: John Doe
+2025-06-09 13:18:41,INFO,com.qa_test_demo.AppTest,Entered password
+2025-06-09 13:18:41,INFO,com.qa_test_demo.AppTest,Entered message
+2025-06-09 13:18:41,INFO,com.qa_test_demo.AppTest,Submit button text: Submit
+2025-06-09 13:18:41,INFO,com.qa_test_demo.AppTest,Tearing down and closing browser
+2025-06-09 13:18:41,INFO,com.qa_test_demo.AppTest,-------------Test complete------------------------

@@ -1,38 +1,19 @@
-11:55:10 INFO  com.qa_test_demo.AppTest - Setting up ChromeDriver...
-11:55:12 INFO  com.qa_test_demo.AppTest - Starting form submission test
-11:55:12 INFO  com.qa_test_demo.AppTest - Opened form page
-11:55:12 INFO  com.qa_test_demo.AppTest - Entered name: John Doe
-11:55:12 INFO  com.qa_test_demo.AppTest - Entered password
-11:55:12 INFO  com.qa_test_demo.AppTest - Entered message
-11:55:12 INFO  com.qa_test_demo.AppTest - Submit button text: Submit
-11:55:12 INFO  com.qa_test_demo.AppTest - Confirmation text received: Form submitted
-11:55:12 INFO  com.qa_test_demo.AppTest - Tearing down and closing browser
-11:55:12 INFO  com.qa_test_demo.AppTest - Test complete
-11:55:14 INFO  com.qa_test_demo.AppTest - Setting up ChromeDriver...
-11:55:15 INFO  com.qa_test_demo.AppTest - Starting form submission test
-11:55:15 INFO  com.qa_test_demo.AppTest - Opened form page
-11:55:15 INFO  com.qa_test_demo.AppTest - Entered name: John Doe
-11:55:15 INFO  com.qa_test_demo.AppTest - Entered password
-11:55:15 INFO  com.qa_test_demo.AppTest - Entered message
-11:55:15 INFO  com.qa_test_demo.AppTest - Submit button text: Submit
-11:55:15 INFO  com.qa_test_demo.AppTest - Tearing down and closing browser
-11:55:15 INFO  com.qa_test_demo.AppTest - Test complete
-11:55:18 INFO  com.qa_test_demo.AppTest - Setting up ChromeDriver...
-11:55:19 INFO  com.qa_test_demo.AppTest - Starting form submission test
-11:55:19 INFO  com.qa_test_demo.AppTest - Opened form page
-11:55:19 INFO  com.qa_test_demo.AppTest - Entered name: John Doe
-11:55:19 INFO  com.qa_test_demo.AppTest - Entered password
-11:55:19 INFO  com.qa_test_demo.AppTest - Entered message
-11:55:19 INFO  com.qa_test_demo.AppTest - Submit button text: Submit
-11:55:19 INFO  com.qa_test_demo.AppTest - Tearing down and closing browser
-11:55:19 INFO  com.qa_test_demo.AppTest - Test complete
-11:55:21 INFO  com.qa_test_demo.AppTest - Setting up ChromeDriver...
-11:55:22 INFO  com.qa_test_demo.AppTest - Starting form submission test
-11:55:22 INFO  com.qa_test_demo.AppTest - Opened form page
-11:55:22 INFO  com.qa_test_demo.AppTest - Entered name: John Doe
-11:55:22 INFO  com.qa_test_demo.AppTest - Entered password
-11:55:23 INFO  com.qa_test_demo.AppTest - Entered message
-11:55:23 INFO  com.qa_test_demo.AppTest - Submit button text: Submit
-11:55:23 INFO  com.qa_test_demo.AppTest - Confirmation text received: Form submitted
-11:55:23 INFO  com.qa_test_demo.AppTest - Tearing down and closing browser
-11:55:23 INFO  com.qa_test_demo.AppTest - Test complete
+12:18:37 INFO  com.qa_test_demo.AppTest MSG: Setting up ChromeDriver...
+12:18:38 INFO  com.qa_test_demo.AppTest MSG: Starting form submission test
+12:18:38 INFO  com.qa_test_demo.AppTest MSG: Opened form page
+12:18:38 INFO  com.qa_test_demo.AppTest MSG: Entered name: John Doe
+12:18:39 INFO  com.qa_test_demo.AppTest MSG: Entered password
+12:18:39 INFO  com.qa_test_demo.AppTest MSG: Entered message
+12:18:39 INFO  com.qa_test_demo.AppTest MSG: Submit button text: Submit
+12:18:39 INFO  com.qa_test_demo.AppTest MSG: Tearing down and closing browser
+12:18:39 INFO  com.qa_test_demo.AppTest MSG: -------------Test complete------------------------
+13:11:51 INFO  com.qa_test_demo.AppTest MSG: Setting up ChromeDriver...
+13:11:52 INFO  com.qa_test_demo.AppTest MSG: Starting form submission test
+13:11:52 INFO  com.qa_test_demo.AppTest MSG: Opened form page
+13:11:52 INFO  com.qa_test_demo.AppTest MSG: Entered name: John Doe
+13:11:52 INFO  com.qa_test_demo.AppTest MSG: Entered password
+13:11:52 INFO  com.qa_test_demo.AppTest MSG: Entered message
+13:11:52 INFO  com.qa_test_demo.AppTest MSG: Submit button text: Submit
+13:11:53 INFO  com.qa_test_demo.AppTest MSG: Confirmation text received: Form submitted
+13:11:53 INFO  com.qa_test_demo.AppTest MSG: Tearing down and closing browser
+13:11:53 INFO  com.qa_test_demo.AppTest MSG: -------------Test complete------------------------
