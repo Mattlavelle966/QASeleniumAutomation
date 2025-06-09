@@ -29,3 +29,4 @@ Technologies Used
     -Maven
     -WebDriverManager
     -CSV/Excel logging (planned)
+    -BotScreenCap (planned)
