@@ -72,7 +72,7 @@ public class AppTest
     public void tearDown() {
         logger.info("Tearing down and closing browser");
 
-        logger.info("Test complete");
+        logger.info("-------------Test complete------------------------");
 
         driver.quit();
     }

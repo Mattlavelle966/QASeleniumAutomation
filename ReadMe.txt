@@ -29,4 +29,5 @@ Technologies Used
     -WebDriverManager
     -SLF4J
     -Logback
+    -Apache OPI
     -BotScreenCap (planned)
