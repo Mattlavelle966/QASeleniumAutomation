@@ -8,7 +8,6 @@ QASeleniumAutomation is a work-in-progress automation testing Env built with Jav
 
 Automate UI testing for a web application
 
-
 Follow clean architecture using Page Object principles
 
 Enable test reusability and reduce maintenance
@@ -28,5 +27,6 @@ Technologies Used
     -JUnit 5(TestNg)
     -Maven
     -WebDriverManager
-    -CSV/Excel logging (planned)
+    -SLF4J
+    -Logback
     -BotScreenCap (planned)
