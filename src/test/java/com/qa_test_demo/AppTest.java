@@ -11,69 +11,83 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
+
+import java.time.Duration;
 
 import static org.junit.Assert.assertEquals;
+
+import java.io.IOException;
 
 public class AppTest 
 {
     private WebDriver driver;
     private static final Logger logger = LoggerFactory.getLogger(AppTest.class);
+    // TODO testCase should be auto increment relative to current running test
+    private String testCase = "TC_001";
 
 
 
     @Before
     public void setUp() {
         // Set up Chrome driver
-        logger.info("Setting up ChromeDriver...");
-        
         driver = new ChromeDriver();
     }
 
     @Test
     public void testFormSubmission() {
+
+        String scenario = "Login with valid credentials";
+
+        String[] entered = {"john doe","help","This is a test message."};
+
+        String enteredMashString = String.join("|", entered);
+
+        String expected = "Form submitted";
+
+        String actual = "NULL";
+        
         // Open the form page
-        driver.get("https://www.selenium.dev/selenium/web/web-form.html"); // Replace with actual URL
+        driver.get("https://www.selenium.dev/selenium/web/web-form.html");// Replace with actual URL
 
-        // Fill in the form fields
-        logger.info("Starting form submission test");
-        driver.get("https://www.selenium.dev/selenium/web/web-form.html");
-        logger.info("Opened form page");
-
-
+        // Input array
         WebElement nameField = driver.findElement(By.id("my-text-id"));
-        nameField.sendKeys("John Doe");
-        logger.info("Entered name: John Doe");
-
+        nameField.sendKeys(entered[0]);
         WebElement passwordField = driver.findElement(By.name("my-password"));
-        passwordField.sendKeys("help");
-         logger.info("Entered password");
-
+        passwordField.sendKeys(entered[1]);
         WebElement messageField = driver.findElement(By.name("my-textarea"));
-        messageField.sendKeys("This is a test message.");
-        logger.info("Entered message");
-        // Click the submit button
+        messageField.sendKeys(entered[2]);
+        // Submit
         WebElement submitButton = driver.findElement(By.className("btn"));
-
-        logger.info("Submit button text: {}", submitButton.getText());
 
         submitButton.click();
 
-        //Wait for pageload
         // Verify confirmation message
         WebElement confirmation = driver.findElement(By.className("display-6"));
+        
         String confirmationText = confirmation.getText();
 
-        logger.info("Confirmation text received: {}", confirmationText);
-        System.out.println( confirmationText );
+        try {
+            actual = confirmationText;
+            MDC.put("testCase", testCase);
+            MDC.put("scenario", scenario);
+            MDC.put("entered", enteredMashString);
+            MDC.put("expected", expected);
+            MDC.put("actual", actual);
+            MDC.put("status", expected.equals(actual) ? "PASSED" : "FAILED");
+            logger.info("");
+            
+        } finally {
+            MDC.clear();
+        }
+
         assertEquals("Form submitted", confirmationText);
     }
+    
 
     @After
     public void tearDown() {
-        logger.info("Tearing down and closing browser");
-
-        logger.info("-------------Test complete------------------------");
-
+        //Close browser
         driver.quit();
     }
 }
