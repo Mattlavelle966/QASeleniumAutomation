@@ -1,20 +1,12 @@
 <configuration>
-  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-    <file>logs/test-log.log</file>
-    <append>true</append>
+  <appender name="CSV" class="ch.qos.logback.core.FileAppender">
+    <file>logs/tests.csv</file>
     <encoder>
-      <pattern>%d{HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+      <pattern>%X{testCase},%X{scenario},%X{entered},%X{expected},%X{actual},%X{status}%n</pattern>
     </encoder>
   </appender>
 
-  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-    <encoder>
-      <pattern>%d{HH:mm:ss} %-5level - %msg%n</pattern>
-    </encoder>
-  </appender>
-
-  <root level="info">
-    <appender-ref ref="FILE"/>
-    <appender-ref ref="CONSOLE"/>
+  <root level="INFO">
+    <appender-ref ref="CSV" />
   </root>
 </configuration>
